@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UfVrihU88/REXI123Y6vFiVYETXTxbnVR7MPpOIY/mU81fA5Eu0w95L7EuE1nbSTx8dSsv8jFHE3W2FMiaMRzw==",
+  "dgSpecHash": "EjkXA0ZaFwdu1ms2ML8k8RY/onPX0IEu/mzoEUzbgxrL7HPY5JahR/h2tH8fw4FP81BFbQ/3PLjVVwYoWLO+dg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
+  "projectFilePath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13202\\.nuget\\packages\\devexpress.xamarinforms.charts\\21.2.6\\devexpress.xamarinforms.charts.21.2.6.nupkg.sha512",
     "C:\\Users\\13202\\.nuget\\packages\\devexpress.xamarinforms.core\\21.2.6\\devexpress.xamarinforms.core.21.2.6.nupkg.sha512",

@@ -4,6 +4,7 @@
              x:Class="SafeLinkApp3.LoginPage">
     <!--Pages can be added as references or inline-->
 
+    <!--Changes to check git-->
     <StackLayout Spacing="5">
         <Entry Text="{Binding UserNameProperty}" Placeholder="Username" />
         <Entry Text="{Binding UserPasswordProperty}" Placeholder="Password" />

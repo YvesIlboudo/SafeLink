@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BEfrBbxWr2vfvWl4xgwNQ4kDw2r15FTmFzBlh1hcS93i1AoyjSgqIIpKJztk0pnoG1aiC9TtINktUfWJsUj0iw==",
+  "dgSpecHash": "2rIenelfDfsmBOMUsxTNwCASRFqG8il3Yj4fUiapRe1bUJEelsciqP3/WQxqbVxh1KpLX9Lrn/roqQewdbvAEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.Android\\SafeLinkApp3.Android.csproj",
+  "projectFilePath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3.Android\\SafeLinkApp3.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13202\\.nuget\\packages\\devexpress.xamarinforms.charts\\21.2.6\\devexpress.xamarinforms.charts.21.2.6.nupkg.sha512",
     "C:\\Users\\13202\\.nuget\\packages\\devexpress.xamarinforms.core\\21.2.6\\devexpress.xamarinforms.core.21.2.6.nupkg.sha512",

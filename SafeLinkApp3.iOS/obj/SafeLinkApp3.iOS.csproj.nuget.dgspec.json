@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj": {}
+    "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj": {
+    "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
+        "projectUniqueName": "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
         "projectName": "SafeLinkApp3.iOS",
-        "projectPath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
+        "projectPath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\SafeLinkApp3.iOS.csproj",
         "packagesPath": "C:\\Users\\13202\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3.iOS\\obj\\",
+        "outputPath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -35,8 +35,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\SafeLinkApp3.csproj": {
-                "projectPath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\SafeLinkApp3.csproj"
+              "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\SafeLinkApp3.csproj": {
+                "projectPath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\SafeLinkApp3.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\SafeLinkApp3.csproj": {
+    "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\SafeLinkApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\SafeLinkApp3.csproj",
+        "projectUniqueName": "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\SafeLinkApp3.csproj",
         "projectName": "SafeLinkApp3",
-        "projectPath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\SafeLinkApp3.csproj",
+        "projectPath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\SafeLinkApp3.csproj",
         "packagesPath": "C:\\Users\\13202\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13202\\OneDrive\\Documents\\Visual Studio 2019\\SafeLinkApp3\\SafeLinkApp3\\obj\\",
+        "outputPath": "C:\\SafeLink\\SafeLink\\SafeLinkApp3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
