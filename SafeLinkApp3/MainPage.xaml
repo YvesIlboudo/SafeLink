@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="SafeLinkApp3.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:vm="clr-namespace:SafeLinkApp3"
+            xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+            xmlns:Views="clr-namespace:SafeLinkApp3.Views"
+            xmlns:dxc="http://schemas.devexpress.com/xamarin/2014/forms/charts">
+    <ContentPage Title="Home" Background="black">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <pv:PancakeView>
+                <pv:PancakeView.Shadow>
+                    <pv:DropShadow Color="Black" Offset="10,10" />
+                </pv:PancakeView.Shadow>
+                <pv:PancakeView.BackgroundGradientStops>
+                    <pv:GradientStopCollection>
+                        <pv:GradientStop Color="#FF00FF" Offset="0" />
+                        <pv:GradientStop Color="#9400D3" Offset="0.5" />
+                        <pv:GradientStop Color="#483d8b" Offset="1" />
+                    </pv:GradientStopCollection>
+                </pv:PancakeView.BackgroundGradientStops>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <pv:PancakeView CornerRadius="20" VerticalOptions="Start"
+                           BackgroundColor="Transparent"
+                            >
+                      
+                        <StackLayout HorizontalOptions="Center">
+                            <Image Source="UserIcon.png" HorizontalOptions="Center" HeightRequest="60" WidthRequest="60" Aspect="Fill"/>
+                            <Label Text="{Binding UserName,FallbackValue='User!'}" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"
+                                   TextColor="White" />
+                            <Label Text="{Binding Age,FallbackValue='Age - 23'}" HorizontalOptions="Center"
+                                   FontSize="20" FontAttributes="None"
+                                   TextColor="White" />
+                            <Label Text="{Binding Location,FallbackValue='St.Cloud Minnesota'}" HorizontalOptions="Center" FontSize="20"
+                                   FontAttributes="None"
+                                   TextColor="White" />
+                        </StackLayout>
+                    </pv:PancakeView>
+                </StackLayout>
+            </pv:PancakeView>
+            <Frame Grid.Row="1" CornerRadius="15" Margin="0,-10,0,0" BackgroundColor="WhiteSmoke">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <StackLayout VerticalOptions="Start" HorizontalOptions="StartAndExpand"
+                                 Spacing="5" >
+                        <Label Text="{Binding HealtSummaryHeader,FallbackValue='Health Summary - 4/4/2022 12:15PM'}" 
+                               FontSize="Body" FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <pv:PancakeView Padding="15" HorizontalOptions="Start"
+                                        VerticalOptions="Start" BackgroundColor="White" >
+                            <pv:PancakeView.Shadow>
+                                <pv:DropShadow Color="Black" Offset="5,5" />
+                            </pv:PancakeView.Shadow>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="heart_icon.png" 
+                                       HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+                                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Your heart rate is:" TextColor="Black"
+                                           FontSize="Medium"  />
+                                        <Label Text="{Binding CurrentHeartRate,FallbackValue='70'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                        <Label Text="BPM"
+                                           FontSize="Medium" TextColor="Black" />
+                                    </StackLayout>
+                                    <Label Text="Heart Rate Status:" TextColor="Black" FontSize="Medium" />
+                                        <Label Text="{Binding CurrentHeartRateStatus,FallbackValue='SLIGHTLY ELEVATED'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                </StackLayout>
+                            </Grid>
+                        </pv:PancakeView>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <pv:PancakeView Padding="15" HorizontalOptions="Start"
+                                        VerticalOptions="Start" BackgroundColor="White" >
+                            <pv:PancakeView.Shadow>
+                                <pv:DropShadow Color="Black" Offset="5,5" />
+                            </pv:PancakeView.Shadow>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="thermoter_icon.png" 
+                                       HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+                                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Your Temperature is" TextColor="Black"
+                                           FontSize="Medium"  />
+                                        <Label Text="{Binding CurrentTemperature,FallbackValue='98.6'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                        <Label Text="F"
+                                           FontSize="Medium" TextColor="Black" />
+                                    </StackLayout>
+                                    <Label Text="Temperature Status:" FontSize="Medium"/>
+                                    <Label Text="{Binding CurrentTemperatureStatus,FallbackValue='NORMAL'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                </StackLayout>
+                            </Grid>
+                        </pv:PancakeView>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <pv:PancakeView Padding="15" HorizontalOptions="Start"
+                                        VerticalOptions="Start" BackgroundColor="White" >
+                            <pv:PancakeView.Shadow>
+                                <pv:DropShadow Color="Black" Offset="5,5" />
+                            </pv:PancakeView.Shadow>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="bloodoxygen_icon.png" 
+                                       HeightRequest="100" WidthRequest="100" Aspect="AspectFit" />
+                                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Blood Oxygen Level:" TextColor="Black"
+                                           FontSize="Medium"  />
+                                        <Label Text="{Binding CurrentTemperature,FallbackValue='96'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                        <Label Text="%"
+                                           FontSize="Medium" TextColor="Black" />
+                                    </StackLayout>
+                                    <Label Text="Blood Oxygen Status:" FontSize="Medium"/>
+                                    <Label Text="{Binding CurrentTemperatureStatus,FallbackValue='LOW'}"
+                                           FontSize="Medium" FontAttributes="Bold" TextColor="Black" />
+                                </StackLayout>
+                            </Grid>
+                        </pv:PancakeView>
+                    </StackLayout>
+                </Grid>
+
+            </Frame>
+        </Grid>
+    </ContentPage>
+
+    <Views:HeartRate />
+    
+    <ContentPage Title="Temperature">
+        <dxc:ChartView>
+            <dxc:ChartView.Series>
+                <dxc:LineSeries DisplayName="{Binding GdpValueForUSA.CountryName}">
+                    <dxc:LineSeries.Data>
+                        <dxc:SeriesDataAdapter DataSource="{Binding GdpValueForUSA.Values}"
+                                           ArgumentDataMember="Year">
+                            <dxc:ValueDataMember Type="Value" Member="Value"/>
+                        </dxc:SeriesDataAdapter>
+                    </dxc:LineSeries.Data>
+                </dxc:LineSeries>
+            </dxc:ChartView.Series>
+       
+        </dxc:ChartView>
+        
+
+
+    </ContentPage>
+    
+    
+   
+    <ContentPage Title="Settings">
+        <Button Text="Logout" Clicked="Button_Clicked" />
+    </ContentPage>
+
+
+
+</TabbedPage>

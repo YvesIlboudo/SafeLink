@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeLinkApp3.LoginPage">
+    <!--Pages can be added as references or inline-->
+
+    <StackLayout Spacing="5">
+        <Entry Text="{Binding UserNameProperty}" Placeholder="Username" />
+        <Entry Text="{Binding UserPasswordProperty}" Placeholder="Password" />
+      
+        <Button Text="Login" WidthRequest="150" BackgroundColor="Purple"
+                    CornerRadius="20"  Command="{Binding LoginCommand}"  />
+        <Label Text="New User :" FontSize="Body" FontAttributes="Bold" />
+        <Button Text="Register" WidthRequest="150" BackgroundColor="DarkOrange"
+                    CornerRadius="20"  Command="{Binding RegisterCommand}"  />
+    </StackLayout>
+
+
+</ContentPage>

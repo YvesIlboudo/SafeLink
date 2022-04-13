@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafeLinkApp3.Views.RegisterPage"
+             xmlns:viewModel ="clr-namespace:SafeLinkApp3.ViewModels" >
+    <ContentPage.BindingContext>
+        <viewModel:RegisterPageViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Spacing="5">
+            <Entry Text="{Binding UserNameProperty}" Placeholder="Username" />
+            <Entry Text="{Binding UserPasswordProperty}" Placeholder="Password" />
+            <Entry Text="{Binding UserAgeProperty}" Placeholder="Age" />
+            <Entry Text="{Binding UserLocationProperty}" Placeholder="Location" />
+            <Button Text="Register" WidthRequest="150" BackgroundColor="Purple"
+                    CornerRadius="20"  Command="{Binding RegisterCommand}"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
